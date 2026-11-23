@@ -31,6 +31,9 @@ const moreEn = [
   ['D7', 'Case file: without a click', 'One ordinary email, and an assistant that later reads it while answering something else.', 'Inspired by EchoLeak, 2025', 'ai', 'Case file'],
   ['D8', 'Case file: the one-euro car', 'A sales chatbot that agrees with everything, down to the price.', 'Inspired by a car dealership’s chatbot, 2023', 'ai', 'Case file'],
   ['D9', 'Case file: one line too many', 'A tool server for AI agents builds its commands as text. A file name finishes the sentence.', 'Inspired by CVE-2025-53107, 2025', 'ai', 'Case file'],
+  ['D10', 'Case file: one number away', 'Tenants read their lease through a link. The end of the link is a counter in disguise, and the server never asks who is there.', 'Inspired by First American Financial, 2019', 'web', 'Case file'],
+  ['D11', 'Case file: the open tap', 'Six thousand euros of AI model in four days. A forgotten test key, with no ceiling and no alert.', 'Inspired by “LLMjacking”, described in 2024', 'ai', 'Case file'],
+  ['D12', 'Case file: the planted sentence', 'An assistant that learns from every visitor repeats to all the others what one of them taught it.', 'Inspired by Tay, 2016', 'ai', 'Case file'],
 ];
 const missionsFr = [
   ['00', 'Le mandat', 'Premier jour chez Ligne Rouge. Avant de toucher à quoi que ce soit, on lit le contrat : il dit ce qu’on a le droit de faire.', 'Code pénal, art. 323-1', 'law', 'Loi'],
@@ -56,6 +59,9 @@ const moreFr = [
   ['D7', 'Dossier : sans un clic', 'Un courriel ordinaire, et un assistant qui le lit plus tard en répondant à autre chose.', 'Inspiré d’EchoLeak, 2025', 'ai', 'Dossier'],
   ['D8', 'Dossier : la voiture à un euro', 'Un chatbot vendeur qui est d’accord avec tout, jusqu’au prix.', 'Inspiré du chatbot d’un concessionnaire, 2023', 'ai', 'Dossier'],
   ['D9', 'Dossier : une ligne de trop', 'Un serveur d’outils pour agents IA construit ses commandes comme du texte. Un nom de fichier finit la phrase.', 'Inspiré de CVE-2025-53107, 2025', 'ai', 'Dossier'],
+  ['D10', 'Dossier : à un numéro près', 'Les locataires lisent leur bail grâce à un lien. La fin du lien est un compteur déguisé, et le serveur ne demande jamais qui est là.', 'Inspiré de First American Financial, 2019', 'web', 'Dossier'],
+  ['D11', 'Dossier : le robinet ouvert', 'Six mille euros de modèle d’IA en quatre jours. Une clé d’essai oubliée, sans plafond ni alerte.', 'Inspiré du « LLMjacking », décrit en 2024', 'ai', 'Dossier'],
+  ['D12', 'Dossier : la phrase plantée', 'Un assistant qui apprend de chaque visiteur répète à tous les autres ce que l’un d’eux lui a appris.', 'Inspiré de Tay, 2016', 'ai', 'Dossier'],
 ];
 
 const commands = {
