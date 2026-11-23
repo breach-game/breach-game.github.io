@@ -16,7 +16,7 @@ Everything is made in the browser, as in the game:
 
 - **The films are not videos.** `assets/js/films.js` draws each one on a canvas as a pure function of time, so they weigh a few kilobytes, can be scrubbed, and their captions are real, translatable text.
 - **The music is not a file.** `assets/js/music.js` generates a slow dark-synth loop with the Web Audio API, like the game’s own soundtrack. No licence question, nothing to download. It plays only after the visitor presses the sound button, and its tension follows the section being read.
-- **No third party.** Fonts are self-hosted (Space Grotesk, JetBrains Mono), there is no analytics and no cookie. A strict Content Security Policy with Trusted Types is set in every page.
+- **No third party, no cookie.** Fonts are self-hosted (Space Grotesk, JetBrains Mono). Visits are counted with a self-hosted [Umami](https://umami.is/) at `umami.mornati.net` (cookieless, no personal data, Do Not Track honoured); clicks on a Play button are counted as the `play` event. The game itself has no analytics. A strict Content Security Policy with Trusted Types is set in every page, and only allows Umami's origin besides the site's own.
 - **Accessible.** Real buttons, visible focus, 44 px targets, captions in a live region, and `prefers-reduced-motion` stops every animation.
 
 ## Layout
