@@ -17,7 +17,7 @@ const VERSION = '1';
 // Only this presentation site is counted; the game at /breach/ stays free of analytics.
 const UMAMI = {
   origin: 'https://umami.mornati.net',
-  websiteId: 'UMAMI_WEBSITE_ID',
+  websiteId: '4da1fc30-0ef6-4e21-9b99-3891034af923',
 };
 
 const CSP = [
