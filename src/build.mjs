@@ -13,13 +13,20 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://breach-game.github.io';
 const VERSION = '1';
 
+// Visit counting with Marco's self-hosted Umami: no cookie, no personal data, Do Not Track honoured.
+// Only this presentation site is counted; the game at /breach/ stays free of analytics.
+const UMAMI = {
+  origin: 'https://umami.mornati.net',
+  websiteId: '4da1fc30-0ef6-4e21-9b99-3891034af923',
+};
+
 const CSP = [
   "default-src 'self'",
-  "script-src 'self'",
+  `script-src 'self' ${UMAMI.origin}`,
   "style-src 'self'",
   "img-src 'self'",
   "font-src 'self'",
-  "connect-src 'self'",
+  `connect-src 'self' ${UMAMI.origin}`,
   "media-src 'none'",
   "object-src 'none'",
   "base-uri 'none'",
@@ -40,6 +47,9 @@ const ICONS = `<svg width="0" height="0" class="sr-only" aria-hidden="true">
   <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M6 6l12 12M18 6L6 18"/></symbol>
   <symbol id="i-gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></symbol>
 </svg>`;
+
+// Umami counts a click on any element carrying data-umami-event, with its data-umami-event-* properties.
+const play = (from) => `data-umami-event="play" data-umami-event-from="${from}"`;
 
 const icon = (id, size = 18) => `<svg width="${size}" height="${size}" aria-hidden="true"><use href="#i-${id}"/></svg>`;
 
@@ -77,6 +87,7 @@ function head(t, { title, description, path, alt }) {
 <meta property="og:locale" content="${t.lang === 'en' ? 'en_GB' : 'fr_FR'}">
 <meta name="twitter:card" content="summary_large_image">
 <script type="module" src="/assets/js/main.js?v=${VERSION}"></script>
+<script defer src="${UMAMI.origin}/script.js" data-website-id="${UMAMI.websiteId}" data-domains="breach-game.github.io" data-do-not-track="true"></script>
 </head>`;
 }
 
@@ -101,7 +112,7 @@ ${ICONS}
   <button class="tool" type="button" data-sound data-on="${t.sound.on}" data-off="${t.sound.off}" aria-pressed="false" title="${esc(t.sound.label)}">
     <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="lbl hide-sm">${t.sound.off}</span><span class="sr-only">${esc(t.sound.label)}</span>
   </button>
-  <a class="tool cta-mini hide-sm" href="${GAME}">${t.nav.play} ${icon('arrow', 14)}</a>
+  <a class="tool cta-mini hide-sm" href="${GAME}" ${play('header')}>${t.nav.play} ${icon('arrow', 14)}</a>
   <button class="tool menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="${t.menu}">${icon('menu')}</button>
 </header>`;
 }
@@ -114,7 +125,7 @@ function footer(t) {
       <p class="legal">${t.foot.legal}</p>
     </div>
     <nav aria-label="${t.lang === 'en' ? 'Footer' : 'Pied de page'}">
-      ${t.foot.links.map(([l, h]) => `<a href="${h}">${l}</a>`).join('\n      ')}
+      ${t.foot.links.map(([l, h]) => `<a href="${h}"${h === GAME ? ` ${play('footer')}` : ''}>${l}</a>`).join('\n      ')}
     </nav>
   </div>
 </footer>`;
@@ -146,7 +157,7 @@ ${header(t, { page: 'home', alt })}
     <h1 id="hero-title">${t.hero.h1}</h1>
     <p class="lede">${t.hero.lede}</p>
     <div class="actions">
-      <a class="btn primary" href="${GAME}">${t.hero.play} ${icon('arrow')}<span class="k">${t.hero.playK}</span></a>
+      <a class="btn primary" href="${GAME}" ${play('hero')}>${t.hero.play} ${icon('arrow')}<span class="k">${t.hero.playK}</span></a>
       <a class="btn ghost" href="#films">${icon('play', 14)} ${t.hero.watch}</a>
     </div>
     <ul class="facts">${t.hero.facts.map((f) => `<li>${f}</li>`).join('')}</ul>
@@ -404,7 +415,7 @@ ${header(t, { page: 'home', alt })}
   <h2 id="final-title" class="reveal">${t.final.h2}</h2>
   <p class="reveal">${t.final.p}</p>
   <div class="actions reveal">
-    <a class="btn primary" href="${GAME}">${t.final.play} ${icon('arrow')}</a>
+    <a class="btn primary" href="${GAME}" ${play('final')}>${t.final.play} ${icon('arrow')}</a>
     <a class="btn ghost" href="${t.base}docs/">${t.final.docs}</a>
   </div>
 </section>

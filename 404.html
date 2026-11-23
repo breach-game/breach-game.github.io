@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; require-trusted-types-for 'script'; trusted-types 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://umami.mornati.net; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self' https://umami.mornati.net; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; require-trusted-types-for 'script'; trusted-types 'none'">
 <meta name="referrer" content="no-referrer">
 <title>404 · BREACH</title>
 <meta name="description" content="Hack a startup full of chatbots and AI agents, under a signed mandate, then replay every step as the defender. Free, open source, in English and French. Everything is simulated.">
@@ -30,6 +30,7 @@
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <script type="module" src="/assets/js/main.js?v=1"></script>
+<script defer src="https://umami.mornati.net/script.js" data-website-id="4da1fc30-0ef6-4e21-9b99-3891034af923" data-domains="breach-game.github.io" data-do-not-track="true"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -58,7 +59,7 @@
   <button class="tool" type="button" data-sound data-on="Sound on" data-off="Sound off" aria-pressed="false" title="Play the soundtrack, generated live in your browser">
     <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="lbl hide-sm">Sound off</span><span class="sr-only">Play the soundtrack, generated live in your browser</span>
   </button>
-  <a class="tool cta-mini hide-sm" href="https://breach-game.github.io/breach/">Play <svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a class="tool cta-mini hide-sm" href="https://breach-game.github.io/breach/" data-umami-event="play" data-umami-event-from="header">Play <svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
   <button class="tool menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><svg width="18" height="18" aria-hidden="true"><use href="#i-menu"/></svg></button>
 </header>
 <main id="main">
@@ -79,7 +80,7 @@
       <p class="legal"><b>BREACH is fiction.</b> NovaMind, Ligne Rouge and every character are invented; every host and address is reserved or private. Attacking a system without written authorisation is a crime.</p>
     </div>
     <nav aria-label="Footer">
-      <a href="https://breach-game.github.io/breach/">Play</a>
+      <a href="https://breach-game.github.io/breach/" data-umami-event="play" data-umami-event-from="footer">Play</a>
       <a href="/docs/">Docs</a>
       <a href="https://github.com/breach-game">GitHub</a>
       <a href="https://github.com/breach-game/packs/blob/main/CONTRIBUTING.md">Mission guide</a>

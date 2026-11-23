@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; require-trusted-types-for 'script'; trusted-types 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://umami.mornati.net; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self' https://umami.mornati.net; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; require-trusted-types-for 'script'; trusted-types 'none'">
 <meta name="referrer" content="no-referrer">
 <title>BREACH : un thriller de cybersécurité dans votre navigateur</title>
 <meta name="description" content="Attaquez une start-up pleine de chatbots et d’agents IA, sous mandat signé, puis rejouez chaque étape côté défense. Gratuit, open source, en français et en anglais. Tout est simulé.">
@@ -30,6 +30,7 @@
 <meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
 <script type="module" src="/assets/js/main.js?v=1"></script>
+<script defer src="https://umami.mornati.net/script.js" data-website-id="4da1fc30-0ef6-4e21-9b99-3891034af923" data-domains="breach-game.github.io" data-do-not-track="true"></script>
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
@@ -58,7 +59,7 @@
   <button class="tool" type="button" data-sound data-on="Son activé" data-off="Son coupé" aria-pressed="false" title="Lancer la musique, générée en direct dans votre navigateur">
     <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="lbl hide-sm">Son coupé</span><span class="sr-only">Lancer la musique, générée en direct dans votre navigateur</span>
   </button>
-  <a class="tool cta-mini hide-sm" href="https://breach-game.github.io/breach/">Jouer <svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a class="tool cta-mini hide-sm" href="https://breach-game.github.io/breach/" data-umami-event="play" data-umami-event-from="header">Jouer <svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
   <button class="tool menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><svg width="18" height="18" aria-hidden="true"><use href="#i-menu"/></svg></button>
 </header>
 <main id="main">
@@ -75,7 +76,7 @@
     <h1 id="hero-title">Piratez l’<span class="red">IA</span>.<br>Puis apprenez à la <span class="cyan">défendre</span>.</h1>
     <p class="lede">BREACH est un thriller de cybersécurité qui se joue dans le navigateur. Pentesteur junior, vous êtes mandaté pour attaquer NovaMind, une start-up pleine de chatbots et d’agents IA. Trouvez leurs failles, puis rejouez chaque étape côté défense.</p>
     <div class="actions">
-      <a class="btn primary" href="https://breach-game.github.io/breach/">Jouer maintenant <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg><span class="k">gratuit · sans compte</span></a>
+      <a class="btn primary" href="https://breach-game.github.io/breach/" data-umami-event="play" data-umami-event-from="hero">Jouer maintenant <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg><span class="k">gratuit · sans compte</span></a>
       <a class="btn ghost" href="#films"><svg width="14" height="14" aria-hidden="true"><use href="#i-play"/></svg> Voir comment ça marche</a>
     </div>
     <ul class="facts"><li>100 % simulé</li><li>Sans installation ni compte</li><li>Français · English</li><li>Open source</li><li>Dès 16 ans</li></ul>
@@ -368,8 +369,8 @@
       </article>
       <article class="safe glass reveal d3">
         <div class="big">0</div>
-        <h3>traceur</h3>
-        <p>Aucune mesure d’audience, aucun cookie, aucun script tiers. Votre progression reste dans votre navigateur.</p>
+        <h3>traceur dans le jeu</h3>
+        <p>Aucune mesure d’audience, aucun cookie, aucun script tiers dans le jeu. Votre progression reste dans votre navigateur.</p>
       </article>
     </div>
     <div class="glass reveal">
@@ -463,7 +464,7 @@
   <h2 id="final-title" class="reveal">Le mandat est signé. Votre terminal vous attend.</h2>
   <p class="reveal">Gratuit, dans le navigateur, en français ou en anglais. Environ deux heures pour la campagne, et un débrief après chaque mission.</p>
   <div class="actions reveal">
-    <a class="btn primary" href="https://breach-game.github.io/breach/">Lancer la première mission <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <a class="btn primary" href="https://breach-game.github.io/breach/" data-umami-event="play" data-umami-event-from="final">Lancer la première mission <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a>
     <a class="btn ghost" href="/fr/docs/">Lire la documentation</a>
   </div>
 </section>
@@ -476,7 +477,7 @@
       <p class="legal"><b>BREACH est une fiction.</b> NovaMind, Ligne Rouge et tous les personnages sont inventés ; chaque hôte et chaque adresse est réservé ou privé. Attaquer un système sans autorisation écrite est un délit.</p>
     </div>
     <nav aria-label="Pied de page">
-      <a href="https://breach-game.github.io/breach/">Jouer</a>
+      <a href="https://breach-game.github.io/breach/" data-umami-event="play" data-umami-event-from="footer">Jouer</a>
       <a href="/fr/docs/">Docs</a>
       <a href="https://github.com/breach-game">GitHub</a>
       <a href="https://github.com/breach-game/packs/blob/main/CONTRIBUTING.md">Guide des missions</a>

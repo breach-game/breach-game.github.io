@@ -144,7 +144,7 @@ pnpm --silent --filter @breach/pack-cli run cli check "$PWD/../packs/packs" --co
     <tr><td>Model help</td><td><code>api.anthropic.com</code></td><td>only with your own key, for the uses you switch on</td></tr>
   </tbody>
 </table>
-<p>The game’s Content Security Policy only allows those destinations. There is no analytics, no cookie and no third-party script, on the game or on this site. The full security model, and how to report a problem, are in <a href="https://github.com/breach-game/breach/blob/main/SECURITY.md">SECURITY.md</a>.</p>`,
+<p>The game’s Content Security Policy only allows those destinations. There is no analytics, no cookie and no third-party script in the game. This presentation site counts its visits with a self-hosted <a href="https://umami.is/">Umami</a>: no cookie, no personal data, and nothing is counted if your browser sends Do Not Track. The full security model, and how to report a problem, are in <a href="https://github.com/breach-game/breach/blob/main/SECURITY.md">SECURITY.md</a>.</p>`,
     },
     {
       id: 'faq',
@@ -301,7 +301,7 @@ pnpm --silent --filter @breach/pack-cli run cli check "$PWD/../packs/packs" --co
     <tr><td>Aide d’un modèle</td><td><code>api.anthropic.com</code></td><td>seulement avec votre clé, pour les usages activés</td></tr>
   </tbody>
 </table>
-<p>La politique de sécurité du contenu (CSP) du jeu n’autorise que ces destinations. Aucune mesure d’audience, aucun cookie, aucun script tiers, ni dans le jeu ni sur ce site. Le modèle de sécurité complet, et comment signaler un problème, sont dans <a href="https://github.com/breach-game/breach/blob/main/SECURITY.md">SECURITY.md</a>.</p>`,
+<p>La politique de sécurité du contenu (CSP) du jeu n’autorise que ces destinations. Aucune mesure d’audience, aucun cookie, aucun script tiers dans le jeu. Ce site de présentation compte ses visites avec une instance auto-hébergée d’<a href="https://umami.is/">Umami</a> : aucun cookie, aucune donnée personnelle, et rien n’est compté si votre navigateur envoie Do Not Track. Le modèle de sécurité complet, et comment signaler un problème, sont dans <a href="https://github.com/breach-game/breach/blob/main/SECURITY.md">SECURITY.md</a>.</p>`,
     },
     {
       id: 'faq',
