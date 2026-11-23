@@ -1853,3 +1853,9 @@ pre.code .g {
   .hero canvas { opacity: 0.4; }
   .cmds td:first-child { white-space: normal; }
 }
+
+/* What comes after the campaign: same rows as the campaign, under their own title. */
+.more-title {
+  margin: 56px 0 12px;
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+}

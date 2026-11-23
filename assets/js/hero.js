@@ -157,7 +157,7 @@ export function startHero(canvas) {
     const litEdges = new Set();
     if (attack) {
       const hop = Math.floor((t - attack.t0) / 0.75);
-      if (hop !== attack.hop && hop < attack.path.length) {
+      if (hop !== attack.hop && hop >= 0 && hop < attack.path.length) {
         attack.hop = hop;
         const node = byId[attack.path[hop]];
         node.pop = 1;

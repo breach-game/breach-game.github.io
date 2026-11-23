@@ -192,8 +192,8 @@
 <section class="section" id="missions" data-tension="0.45" aria-labelledby="missions-title">
   <div class="wrap">
     <p class="kicker red reveal" data-n="03">La campagne</p>
-    <h2 id="missions-title" class="reveal">Sept missions, une entreprise, les vraies familles de failles de l’IA.</h2>
-    <p class="intro reveal">Chaque mission enseigne une famille de failles de l’OWASP Top 10 et de l’OWASP Top 10 des applications LLM, en 10 à 20 minutes. Rien n’y fonctionne contre un vrai système : vous apprenez le principe, pas une recette.</p>
+    <h2 id="missions-title" class="reveal">Dix missions, une entreprise, les vraies familles de failles de l’IA.</h2>
+    <p class="intro reveal">Sept missions où vous attaquez, puis trois où vous défendez. Chacune enseigne une famille de failles de l’OWASP Top 10 et de l’OWASP Top 10 des applications LLM, en 10 à 20 minutes. Rien n’y fonctionne contre un vrai système : vous apprenez le principe, pas une recette.</p>
     <ol class="campaign">
       <li class="mission law reveal d0">
         <span class="num">00</span>
@@ -229,6 +229,80 @@
         <span class="num">06</span>
         <div><h3>Sur les traces de Mute</h3><p>Mouvement latéral et exfiltration. Quelqu’un est entré chez NovaMind avant vous. Suivez son chemin de machine en machine, dans ses propres traces.</p><p class="ref">MITRE ATT&CK · TA0008, TA0010</p></div>
         <span class="chip cyan">Incident</span>
+      </li>
+      <li class="mission def reveal d7">
+        <span class="num">07</span>
+        <div><h3>Mute revient</h3><p>Blue Team. Mute est de retour, en direct cette fois. Lisez les journaux, choisissez le confinement le plus étroit, et coupez-le avant que les données sortent.</p><p class="ref">Réponse à incident · confinement</p></div>
+        <span class="chip cyan">Défense</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">08</span>
+        <div><h3>Atlas sous influence</h3><p>Blue Team. Quelqu’un se fait passer pour la direction informatique auprès de l’agent d’exploitation. Éteindre l’agent ne suffit pas : il faut défaire ce qu’il a déjà fait.</p><p class="ref">OWASP LLM Top 10 · LLM06 Excessive Agency</p></div>
+        <span class="chip cyan">Défense</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">09</span>
+        <div><h3>La clé du partenaire</h3><p>Blue Team. La clé d’API d’un partenaire a fuité, et quelqu’un parcourt les dossiers des cliniques un par un. Bloquer son adresse ? Il en a d’autres.</p><p class="ref">OWASP API Security · API2 Broken Authentication</p></div>
+        <span class="chip cyan">Défense</span>
+      </li>
+    </ol>
+    <h3 class="more-title reveal">Après la campagne</h3>
+    <p class="intro reveal">Une deuxième saison dans une nouvelle entreprise, des entraînements courts, et les Dossiers : des séries écrites à partir d’incidents documentés publiquement. Chacun se joue sous mandat dans une entreprise fictive, et se termine par une fiche sourcée de ce qui s’est vraiment passé.</p>
+    <ol class="campaign more">
+      <li class="mission web reveal d0">
+        <span class="num">S2</span>
+        <div><h3>Saison 2 : la chaîne de fabrication</h3><p>Une nouvelle entreprise, Halcyon, livre un assistant de code chaque nuit. Lisez sa chaîne de fabrication publique, glissez-y un paquet par son seul nom, puis apprenez-lui quels noms sont les siens.</p><p class="ref">Confusion de dépendances · recherche publiée en 2021</p></div>
+        <span class="chip red">Saison</span>
+      </li>
+      <li class="mission def reveal d1">
+        <span class="num">T</span>
+        <div><h3>Entraînements</h3><p>Quatre missions courtes, une technique chacune, toujours ouvertes : lire un journal, encodé n’est pas chiffré, le script modifié, le mail suspect.</p><p class="ref">Dix minutes chacun</p></div>
+        <span class="chip cyan">Entraînement</span>
+      </li>
+      <li class="mission web reveal d2">
+        <span class="num">D1</span>
+        <div><h3>Dossier : le script de confiance</h3><p>Un secret resté dans une couche d’image, puis une ligne ajoutée à un script que des milliers de builds envoient dans un shell.</p><p class="ref">Inspiré de Codecov, 2021</p></div>
+        <span class="chip red">Dossier</span>
+      </li>
+      <li class="mission ai reveal d3">
+        <span class="num">D2</span>
+        <div><h3>Dossier : l’agent qui aide trop</h3><p>Un agent IA lit un ticket public, atteint un dépôt privé et publie ce qu’il y a trouvé.</p><p class="ref">Inspiré d’une recherche d’Invariant Labs, 2025</p></div>
+        <span class="chip violet">◆ Dossier</span>
+      </li>
+      <li class="mission web reveal d4">
+        <span class="num">D3</span>
+        <div><h3>Dossier : le coup de fil</h3><p>Un appel du « support informatique », une page de connexion jumelle, et les clés des outils internes.</p><p class="ref">Inspiré de Twitter, 2020</p></div>
+        <span class="chip red">Dossier</span>
+      </li>
+      <li class="mission web reveal d5">
+        <span class="num">D4</span>
+        <div><h3>Dossier : le bouton « Approuver »</h3><p>Un téléphone qui sonne jusqu’à ce que son propriétaire dise oui, puis un secret laissé dans un fichier lisible par tous.</p><p class="ref">Inspiré d’Uber, 2022</p></div>
+        <span class="chip red">Dossier</span>
+      </li>
+      <li class="mission web reveal d6">
+        <span class="num">D5</span>
+        <div><h3>Dossier : le rôle trop large</h3><p>Une passerelle qui va chercher un peu trop, et un rôle cloud qui pouvait tout lire.</p><p class="ref">Inspiré de Capital One, 2019</p></div>
+        <span class="chip red">Dossier</span>
+      </li>
+      <li class="mission def reveal d7">
+        <span class="num">D6</span>
+        <div><h3>Dossier : une demi-seconde de trop</h3><p>Une connexion devenue plus lente, une archive qui diffère de son dépôt, deux ans de patience.</p><p class="ref">Inspiré de xz Utils, 2024</p></div>
+        <span class="chip cyan">Dossier</span>
+      </li>
+      <li class="mission ai reveal d8">
+        <span class="num">D7</span>
+        <div><h3>Dossier : sans un clic</h3><p>Un courriel ordinaire, et un assistant qui le lit plus tard en répondant à autre chose.</p><p class="ref">Inspiré d’EchoLeak, 2025</p></div>
+        <span class="chip violet">◆ Dossier</span>
+      </li>
+      <li class="mission ai reveal d8">
+        <span class="num">D8</span>
+        <div><h3>Dossier : la voiture à un euro</h3><p>Un chatbot vendeur qui est d’accord avec tout, jusqu’au prix.</p><p class="ref">Inspiré du chatbot d’un concessionnaire, 2023</p></div>
+        <span class="chip violet">◆ Dossier</span>
+      </li>
+      <li class="mission ai reveal d8">
+        <span class="num">D9</span>
+        <div><h3>Dossier : une ligne de trop</h3><p>Un serveur d’outils pour agents IA construit ses commandes comme du texte. Un nom de fichier finit la phrase.</p><p class="ref">Inspiré de CVE-2025-53107, 2025</p></div>
+        <span class="chip violet">◆ Dossier</span>
       </li>
     </ol>
   </div>

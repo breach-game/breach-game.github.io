@@ -248,6 +248,19 @@ ${header(t, { page: 'home', alt })}
         )
         .join('\n      ')}
     </ol>
+    <h3 class="more-title reveal">${t.missions.moreTitle}</h3>
+    <p class="intro reveal">${t.missions.moreIntro}</p>
+    <ol class="campaign more">
+      ${t.missions.more
+        .map(
+          ([n, title, sum, ref, kind, chip], i) => `<li class="mission ${kind} reveal ${d(i)}">
+        <span class="num">${n}</span>
+        <div><h3>${title}</h3><p>${sum}</p><p class="ref">${ref}</p></div>
+        <span class="chip ${kind === 'ai' ? 'violet' : kind === 'def' ? 'cyan' : kind === 'web' ? 'red' : ''}">${kind === 'ai' ? '◆ ' : ''}${chip}</span>
+      </li>`,
+        )
+        .join('\n      ')}
+    </ol>
   </div>
 </section>
 
