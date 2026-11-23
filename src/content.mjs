@@ -15,6 +15,22 @@ const missionsEn = [
   ['04', 'The trapped CV', 'Indirect injection. An AI screens job applications and reads every CV to the last line, including the lines that give it orders.', 'OWASP LLM Top 10 · LLM01, LLM06', 'ai', 'AI'],
   ['05', 'Too much power', 'Excessive agency. Atlas, NovaMind’s internal agent, is plugged into every tool with admin rights. You only have to ask.', 'OWASP LLM Top 10 · LLM06 Excessive Agency', 'ai', 'AI'],
   ['06', 'On Mute’s trail', 'Lateral movement and exfiltration. Someone got into NovaMind before you. Follow their path from host to host, in their own footprints.', 'MITRE ATT&CK · TA0008, TA0010', 'def', 'Incident'],
+  ['07', 'Mute returns', 'Blue Team. Mute is back, live this time. Read the logs, pick the narrowest containment, and cut him off before the data leaves.', 'Incident response · containment', 'def', 'Defence'],
+  ['08', 'Atlas under influence', 'Blue Team. Someone poses as IT management to NovaMind’s operations agent. Shutting the agent down is not enough: you have to undo what it already did.', 'OWASP LLM Top 10 · LLM06 Excessive Agency', 'def', 'Defence'],
+  ['09', 'The partner’s key', 'Blue Team. A partner’s API key has leaked, and someone walks through the clinics’ records one by one. Block their address? They have others.', 'OWASP API Security · API2 Broken Authentication', 'def', 'Defence'],
+];
+const moreEn = [
+  ['S2', 'Season 2: the build chain', 'A new company, Halcyon, ships a code assistant every night. Read its public build chain, slip a package in by its name alone, then teach the chain which names are its own.', 'Dependency confusion · research published in 2021', 'web', 'Season'],
+  ['T', 'Trainings', 'Four short missions, one technique each, always open: reading a log, encoding is not encryption, an altered install script, a suspicious email.', 'Ten minutes each', 'def', 'Training'],
+  ['D1', 'Case file: the trusted script', 'A secret left in an image layer, then one line added to a script that thousands of builds pipe into a shell.', 'Inspired by Codecov, 2021', 'web', 'Case file'],
+  ['D2', 'Case file: the agent that helps too much', 'An AI agent reads a public issue, reaches a private repository and publishes what it found.', 'Inspired by Invariant Labs research, 2025', 'ai', 'Case file'],
+  ['D3', 'Case file: the phone call', 'A call from “IT support”, a look-alike sign-in page, and the keys to the internal tools.', 'Inspired by Twitter, 2020', 'web', 'Case file'],
+  ['D4', 'Case file: the “Approve” button', 'A phone that rings until its owner taps yes, then a secret left in a file everyone can read.', 'Inspired by Uber, 2022', 'web', 'Case file'],
+  ['D5', 'Case file: the role that was too wide', 'A gateway that fetches a little too much, and a cloud role that could read everything.', 'Inspired by Capital One, 2019', 'web', 'Case file'],
+  ['D6', 'Case file: half a second too long', 'A login that got slower, an archive that differs from its repository, two years of patience.', 'Inspired by xz Utils, 2024', 'def', 'Case file'],
+  ['D7', 'Case file: without a click', 'One ordinary email, and an assistant that later reads it while answering something else.', 'Inspired by EchoLeak, 2025', 'ai', 'Case file'],
+  ['D8', 'Case file: the one-euro car', 'A sales chatbot that agrees with everything, down to the price.', 'Inspired by a car dealership’s chatbot, 2023', 'ai', 'Case file'],
+  ['D9', 'Case file: one line too many', 'A tool server for AI agents builds its commands as text. A file name finishes the sentence.', 'Inspired by CVE-2025-53107, 2025', 'ai', 'Case file'],
 ];
 const missionsFr = [
   ['00', 'Le mandat', 'Premier jour chez Ligne Rouge. Avant de toucher à quoi que ce soit, on lit le contrat : il dit ce qu’on a le droit de faire.', 'Code pénal, art. 323-1', 'law', 'Loi'],
@@ -24,6 +40,22 @@ const missionsFr = [
   ['04', 'Le CV piégé', 'Injection indirecte. Une IA trie les candidatures et lit chaque CV jusqu’à la dernière ligne, y compris celles qui lui donnent des ordres.', 'OWASP LLM Top 10 · LLM01, LLM06', 'ai', 'IA'],
   ['05', 'Trop de pouvoir', 'Agent trop puissant. Atlas, l’agent interne de NovaMind, est branché sur tous les outils avec des droits d’administrateur. Il suffit de demander.', 'OWASP LLM Top 10 · LLM06 Excessive Agency', 'ai', 'IA'],
   ['06', 'Sur les traces de Mute', 'Mouvement latéral et exfiltration. Quelqu’un est entré chez NovaMind avant vous. Suivez son chemin de machine en machine, dans ses propres traces.', 'MITRE ATT&CK · TA0008, TA0010', 'def', 'Incident'],
+  ['07', 'Mute revient', 'Blue Team. Mute est de retour, en direct cette fois. Lisez les journaux, choisissez le confinement le plus étroit, et coupez-le avant que les données sortent.', 'Réponse à incident · confinement', 'def', 'Défense'],
+  ['08', 'Atlas sous influence', 'Blue Team. Quelqu’un se fait passer pour la direction informatique auprès de l’agent d’exploitation. Éteindre l’agent ne suffit pas : il faut défaire ce qu’il a déjà fait.', 'OWASP LLM Top 10 · LLM06 Excessive Agency', 'def', 'Défense'],
+  ['09', 'La clé du partenaire', 'Blue Team. La clé d’API d’un partenaire a fuité, et quelqu’un parcourt les dossiers des cliniques un par un. Bloquer son adresse ? Il en a d’autres.', 'OWASP API Security · API2 Broken Authentication', 'def', 'Défense'],
+];
+const moreFr = [
+  ['S2', 'Saison 2 : la chaîne de fabrication', 'Une nouvelle entreprise, Halcyon, livre un assistant de code chaque nuit. Lisez sa chaîne de fabrication publique, glissez-y un paquet par son seul nom, puis apprenez-lui quels noms sont les siens.', 'Confusion de dépendances · recherche publiée en 2021', 'web', 'Saison'],
+  ['T', 'Entraînements', 'Quatre missions courtes, une technique chacune, toujours ouvertes : lire un journal, encodé n’est pas chiffré, le script modifié, le mail suspect.', 'Dix minutes chacun', 'def', 'Entraînement'],
+  ['D1', 'Dossier : le script de confiance', 'Un secret resté dans une couche d’image, puis une ligne ajoutée à un script que des milliers de builds envoient dans un shell.', 'Inspiré de Codecov, 2021', 'web', 'Dossier'],
+  ['D2', 'Dossier : l’agent qui aide trop', 'Un agent IA lit un ticket public, atteint un dépôt privé et publie ce qu’il y a trouvé.', 'Inspiré d’une recherche d’Invariant Labs, 2025', 'ai', 'Dossier'],
+  ['D3', 'Dossier : le coup de fil', 'Un appel du « support informatique », une page de connexion jumelle, et les clés des outils internes.', 'Inspiré de Twitter, 2020', 'web', 'Dossier'],
+  ['D4', 'Dossier : le bouton « Approuver »', 'Un téléphone qui sonne jusqu’à ce que son propriétaire dise oui, puis un secret laissé dans un fichier lisible par tous.', 'Inspiré d’Uber, 2022', 'web', 'Dossier'],
+  ['D5', 'Dossier : le rôle trop large', 'Une passerelle qui va chercher un peu trop, et un rôle cloud qui pouvait tout lire.', 'Inspiré de Capital One, 2019', 'web', 'Dossier'],
+  ['D6', 'Dossier : une demi-seconde de trop', 'Une connexion devenue plus lente, une archive qui diffère de son dépôt, deux ans de patience.', 'Inspiré de xz Utils, 2024', 'def', 'Dossier'],
+  ['D7', 'Dossier : sans un clic', 'Un courriel ordinaire, et un assistant qui le lit plus tard en répondant à autre chose.', 'Inspiré d’EchoLeak, 2025', 'ai', 'Dossier'],
+  ['D8', 'Dossier : la voiture à un euro', 'Un chatbot vendeur qui est d’accord avec tout, jusqu’au prix.', 'Inspiré du chatbot d’un concessionnaire, 2023', 'ai', 'Dossier'],
+  ['D9', 'Dossier : une ligne de trop', 'Un serveur d’outils pour agents IA construit ses commandes comme du texte. Un nom de fichier finit la phrase.', 'Inspiré de CVE-2025-53107, 2025', 'ai', 'Dossier'],
 ];
 
 const commands = {
@@ -181,9 +213,12 @@ export const T = {
     },
     missions: {
       kicker: 'The campaign',
-      h2: 'Seven missions, one company, the real classes of AI flaws.',
-      intro: 'Each mission teaches one class of weakness from the OWASP Top 10 and the OWASP Top 10 for LLM applications, and lasts 10 to 20 minutes. None of it works against a real system: you learn the pattern, not a payload.',
+      h2: 'Ten missions, one company, the real classes of AI flaws.',
+      intro: 'Seven missions where you attack, then three where you defend. Each one teaches a class of weakness from the OWASP Top 10 and the OWASP Top 10 for LLM applications, and lasts 10 to 20 minutes. None of it works against a real system: you learn the pattern, not a payload.',
       list: missionsEn,
+      moreTitle: 'Beyond the campaign',
+      moreIntro: 'A second season in a new company, short trainings, and the case files: series written from publicly documented incidents. Each is played under mandate at a fictional company, and ends with a sourced card of what really happened.',
+      more: moreEn,
     },
     duel: {
       kicker: 'Attack, then defend',
@@ -438,9 +473,12 @@ export const T = {
     },
     missions: {
       kicker: 'La campagne',
-      h2: 'Sept missions, une entreprise, les vraies familles de failles de l’IA.',
-      intro: 'Chaque mission enseigne une famille de failles de l’OWASP Top 10 et de l’OWASP Top 10 des applications LLM, en 10 à 20 minutes. Rien n’y fonctionne contre un vrai système : vous apprenez le principe, pas une recette.',
+      h2: 'Dix missions, une entreprise, les vraies familles de failles de l’IA.',
+      intro: 'Sept missions où vous attaquez, puis trois où vous défendez. Chacune enseigne une famille de failles de l’OWASP Top 10 et de l’OWASP Top 10 des applications LLM, en 10 à 20 minutes. Rien n’y fonctionne contre un vrai système : vous apprenez le principe, pas une recette.',
       list: missionsFr,
+      moreTitle: 'Après la campagne',
+      moreIntro: 'Une deuxième saison dans une nouvelle entreprise, des entraînements courts, et les Dossiers : des séries écrites à partir d’incidents documentés publiquement. Chacun se joue sous mandat dans une entreprise fictive, et se termine par une fiche sourcée de ce qui s’est vraiment passé.',
+      more: moreFr,
     },
     duel: {
       kicker: 'Attaquer, puis défendre',

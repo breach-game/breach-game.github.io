@@ -73,6 +73,8 @@ export function startHero(canvas) {
   let pmy = 0;
   let visible = true;
   let attack = null;
+  /** The moment shown when motion is reduced, in seconds. */
+  const STILL = 12;
   let lastAttack = -3;
   let lastScan = 0;
   let start = performance.now();
@@ -114,7 +116,8 @@ export function startHero(canvas) {
 
   function frame(now) {
     raf = 0;
-    const t = (now - start) / 1000;
+    // With reduced motion the map is one still frame: every redraw shows the same moment.
+    const t = reduce.matches ? STILL : (now - start) / 1000;
     pmx += (mx - pmx) * 0.04;
     pmy += (my - pmy) * 0.04;
     draw(t);
@@ -300,7 +303,7 @@ export function startHero(canvas) {
   resize();
   window.addEventListener('resize', () => {
     resize();
-    if (reduce.matches) draw(12);
+    if (reduce.matches) draw(STILL);
   });
   window.addEventListener(
     'pointermove',
