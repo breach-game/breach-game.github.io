@@ -80,6 +80,7 @@ export const DOCS = {
     <tr><td>9</td><td>Ligne Rouge itself</td><td>The finale. No new command: you defend your own firm with what the seasons taught.</td></tr>
     <tr><td>10</td><td>The Lemerle family home</td><td>Defence only, with the family’s agreement: the home network, the router, a camera account, a Zigbee and Z-Wave hub, scams by text and voice, the mailbox, a plug that talks at night. Each debrief has a <i>To do at home</i> card.</td></tr>
     <tr><td>11</td><td>Comptoir, a bank that is an API</td><td>The OWASP API Security Top 10: an old version still served, an object served without checking its owner, a code with no limit on tries, a server that fetches for you, a loose OAuth return address, a flood of valid requests.</td></tr>
+    <tr><td>12</td><td>Coup de main, an app written with an AI assistant</td><td>A public database key with no row rules, an administrator demo account, a secret in a shared conversation, reviewing generated code, writing the rules.</td></tr>
   </tbody>
 </table>
 <p>Some seasons ask for more than flags: a file to repair and have checked with <code>verify</code>, a faulty line to point at with <code>review</code>, a detection rule or an agent guardrail to write and try with <code>rule test</code> and <code>eval run</code>, or a decision where no option is wrong but each has a price.</p>`,
@@ -122,7 +123,7 @@ export const DOCS = {
   <li>Every community pack passed the same validator as the official missions: reserved domains only, no code, a solution that finishes the mission in every language it declares.</li>
   <li>Each community mission is saved separately, so it never touches your campaign.</li>
 </ul>
-<p>The store also holds the BREACH team’s own extra content: forty case files written from real incidents (the most sensitive ones played on the defence side only), twelve fictional side series, nine Expert-only challenges, a <i>First steps</i> collection, and five paths that suggest an order through everything, official missions included. A path step counts as soon as you finish it in any save.</p>`,
+<p>The store also holds the BREACH team’s own extra content: forty-six case files written from real incidents (the most sensitive ones played on the defence side only), fifteen fictional side series, eleven Expert-only challenges, a <i>First steps</i> collection, and six paths that suggest an order through everything, official missions included. A path step counts as soon as you finish it in any save.</p>`,
     },
     {
       id: 'create',
@@ -260,6 +261,7 @@ pnpm --silent --filter @breach/pack-cli run cli check "$PWD/../packs/packs" --co
     <tr><td>9</td><td>Ligne Rouge elle-même</td><td>La finale. Aucune commande nouvelle : vous défendez votre propre cabinet avec ce que les saisons vous ont appris.</td></tr>
     <tr><td>10</td><td>La maison de la famille Lemerle</td><td>Côté défense seulement, avec l’accord de la famille : le réseau de la maison, la box, le compte d’une caméra, un hub Zigbee et Z-Wave, les arnaques par SMS et par la voix, la messagerie, une prise qui parle la nuit. Chaque débrief porte une carte <i>À faire chez toi</i>.</td></tr>
     <tr><td>11</td><td>Comptoir, une banque qui est une API</td><td>L’OWASP API Security Top 10 : une vieille version encore servie, un objet servi sans vérifier son propriétaire, un code sans limite d’essais, un serveur qui va chercher à votre place, une adresse de retour OAuth trop souple, un afflux de requêtes valides.</td></tr>
+    <tr><td>12</td><td>Coup de main, une appli écrite avec un assistant IA</td><td>Une clé publique de la base sans règles par ligne, un compte de démo administrateur, un secret dans une conversation partagée, la relecture du code généré, l’écriture des règles.</td></tr>
   </tbody>
 </table>
 <p>Certaines saisons demandent plus que des flags : un fichier à réparer et à faire contrôler avec <code>verify</code>, une ligne fautive à désigner avec <code>review</code>, une règle de détection ou un garde-fou d’agent à écrire puis à essayer avec <code>rule test</code> et <code>eval run</code>, ou une décision où aucune option n’est fausse mais où chacune a un prix.</p>`,
@@ -302,7 +304,7 @@ pnpm --silent --filter @breach/pack-cli run cli check "$PWD/../packs/packs" --co
   <li>Chaque pack communautaire est passé par le même validateur que les missions officielles : domaines réservés uniquement, aucun code, une solution qui termine la mission dans chaque langue déclarée.</li>
   <li>Chaque mission communautaire a sa propre sauvegarde : elle ne touche jamais votre campagne.</li>
 </ul>
-<p>Le store contient aussi le contenu supplémentaire de l’équipe BREACH : quarante Dossiers écrits à partir d’incidents réels (les plus sensibles joués côté défense seulement), douze hors-série fictifs, neuf Défis en Expert seulement, une collection <i>Premiers pas</i>, et cinq parcours qui proposent un ordre à travers tout le contenu, missions officielles comprises. Une étape de parcours compte dès que vous la terminez, dans n’importe quelle sauvegarde.</p>`,
+<p>Le store contient aussi le contenu supplémentaire de l’équipe BREACH : quarante-six Dossiers écrits à partir d’incidents réels (les plus sensibles joués côté défense seulement), quinze hors-série fictifs, onze Défis en Expert seulement, une collection <i>Premiers pas</i>, et six parcours qui proposent un ordre à travers tout le contenu, missions officielles comprises. Une étape de parcours compte dès que vous la terminez, dans n’importe quelle sauvegarde.</p>`,
     },
     {
       id: 'create',

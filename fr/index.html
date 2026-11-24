@@ -247,7 +247,7 @@
       </li>
     </ol>
     <h3 class="more-title reveal">Après la campagne</h3>
-    <p class="intro reveal">Dix saisons de plus, chacune dans un nouveau lieu, jusqu’à une finale chez Ligne Rouge elle-même, puis la maison d’une famille et une banque qui n’est qu’une API, douze entraînements courts, douze hors-série, des Défis en Expert, et quarante Dossiers : des séries écrites à partir d’incidents documentés publiquement, les plus sensibles jouées côté défense seulement. Chacun se joue sous mandat dans une entreprise fictive, et se termine par une fiche sourcée de ce qui s’est vraiment passé.</p>
+    <p class="intro reveal">Onze saisons de plus, chacune dans un nouveau lieu, jusqu’à une finale chez Ligne Rouge elle-même, puis la maison d’une famille, une banque qui n’est qu’une API et une appli écrite par un assistant IA, quinze entraînements courts, quinze hors-série, des Défis en Expert, et quarante-six Dossiers : des séries écrites à partir d’incidents documentés publiquement, les plus sensibles jouées côté défense seulement. Chacun se joue sous mandat dans une entreprise fictive, et se termine par une fiche sourcée de ce qui s’est vraiment passé.</p>
     <ol class="campaign more">
       <li class="mission web reveal d0">
         <span class="num">S2</span>
@@ -298,6 +298,11 @@
         <span class="num">S11</span>
         <div><h3>Saison 11 : le comptoir</h3><p>Comptoir est une banque qui n’existe que par son appli et son API. Une version retirée sur le papier, un compte servi sans vérifier son propriétaire, un code SMS sans limite d’essais, un testeur de notifications qui va chercher des adresses internes, une adresse de retour OAuth trop souple, et un parrainage pris d’assaut.</p><p class="ref">OWASP API Security Top 10</p></div>
         <span class="chip red">Saison</span>
+      </li>
+      <li class="mission ai reveal d8">
+        <span class="num">S12</span>
+        <div><h3>Saison 12 : le prototype</h3><p>Coup de main, une appli d’entraide entre voisins, a été écrite en un week-end avec un assistant de code. Une clé publique de la base sans règles derrière, tous les profils lisibles avec elle, un compte de démo administrateur resté en ligne, une conversation partagée qui contient la clé de service, puis la relecture du code généré et l’écriture des règles.</p><p class="ref">Inspiré de la CVE-2025-48757 · OWASP A01</p></div>
+        <span class="chip violet">◆ Saison</span>
       </li>
       <li class="mission def reveal d8">
         <span class="num">T</span>
@@ -504,19 +509,49 @@
         <div><h3>Dossier : la route la plus précise</h3><p>Côté défense : le site n’a pas bougé, c’est la route vers son nom qui a changé.</p><p class="ref">Inspiré du détournement de routes de MyEtherWallet, 2018</p></div>
         <span class="chip cyan">Dossier</span>
       </li>
+      <li class="mission def reveal d8">
+        <span class="num">D41</span>
+        <div><h3>Dossier : le connecteur du chat</h3><p>Côté défense : le jeton d’un fournisseur de chat lit tous les tickets du support, et les clés du cloud collées dedans.</p><p class="ref">Inspiré du vol de jetons Salesloft Drift, 2025</p></div>
+        <span class="chip cyan">Dossier</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D42</span>
+        <div><h3>Dossier : la copie cachée</h3><p>Côté défense : l’outil de messagerie d’un assistant IA ajoute en silence une copie cachée.</p><p class="ref">Inspiré du premier serveur MCP malveillant, 2025</p></div>
+        <span class="chip cyan">Dossier</span>
+      </li>
+      <li class="mission web reveal d8">
+        <span class="num">D43</span>
+        <div><h3>Dossier : le compte de recette</h3><p>Un compte de test oublié, au mot de passe trivial, ouvre l’administration d’un chatbot de recrutement.</p><p class="ref">Inspiré de McHire, 2025</p></div>
+        <span class="chip red">Dossier</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D44</span>
+        <div><h3>Dossier : le premier jour</h3><p>Côté défense : le portable d’une nouvelle recrue à distance charge un voleur de données dès le premier jour, et le dossier d’embauche ne tient pas.</p><p class="ref">Inspiré du faux informaticien recruté par KnowBe4, 2024</p></div>
+        <span class="chip cyan">Dossier</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D45</span>
+        <div><h3>Dossier : le code de la réunion</h3><p>Côté défense : une invitation à une réunion demande un code sur la vraie page de connexion.</p><p class="ref">Inspiré de l’hameçonnage par code d’appareil Storm-2372, 2025</p></div>
+        <span class="chip cyan">Dossier</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D46</span>
+        <div><h3>Dossier : l’extension de Noël</h3><p>Côté défense : un faux avis du magasin, un consentement, et une extension de navigateur qui envoie les cookies ailleurs.</p><p class="ref">Inspiré du détournement de l’extension Cyberhaven, 2024</p></div>
+        <span class="chip cyan">Dossier</span>
+      </li>
       <li class="mission web reveal d8">
         <span class="num">H</span>
-        <div><h3>Hors-série</h3><p>Douze séries fictives sur ce que les saisons ne couvraient pas : un domaine sosie, un correctif du vendredi, le stockage des mots de passe, les processus d’un poste, une panne sans attaquant, Kubernetes, une appli mobile, l’IA fantôme, l’annuaire de l’entreprise, une porte tenue et une clé USB trouvée, des poids de modèle dans un seau ouvert, et l’aide à quelqu’un qui se sent suivi.</p><p class="ref">Entreprises fictives · dans le store</p></div>
+        <div><h3>Hors-série</h3><p>Quinze séries fictives sur ce que les saisons ne couvraient pas : un domaine sosie, un correctif du vendredi, le stockage des mots de passe, les processus d’un poste, une panne sans attaquant, Kubernetes, une appli mobile, l’IA fantôme, l’annuaire de l’entreprise, une porte tenue et une clé USB trouvée, des poids de modèle dans un seau ouvert, l’aide à quelqu’un qui se sent suivi, les QR codes, le Wi-Fi public, et une fausse vérification qui demande de coller une commande.</p><p class="ref">Entreprises fictives · dans le store</p></div>
         <span class="chip red">Hors-série</span>
       </li>
       <li class="mission def reveal d8">
         <span class="num">X</span>
-        <div><h3>Défis</h3><p>Neuf énigmes courtes jouées en Expert seulement : ni guide ni indice, juste le briefing.</p><p class="ref">Expert seulement</p></div>
+        <div><h3>Défis</h3><p>Onze énigmes courtes jouées en Expert seulement : ni guide ni indice, juste le briefing.</p><p class="ref">Expert seulement</p></div>
         <span class="chip cyan">Défi</span>
       </li>
       <li class="mission law reveal d8">
         <span class="num">P</span>
-        <div><h3>Parcours</h3><p>Des ordres conseillés à travers tout le contenu : premiers pas pour qui n’a jamais ouvert un terminal, failles du web, attaquer et défendre une IA, analyste SOC.</p><p class="ref">Dans le store</p></div>
+        <div><h3>Parcours</h3><p>Des ordres conseillés à travers tout le contenu : premiers pas pour qui n’a jamais ouvert un terminal, failles du web, attaquer et défendre une IA, analyste SOC, sécuriser sa maison, en déplacement.</p><p class="ref">Dans le store</p></div>
         <span class="chip ">Parcours</span>
       </li>
     </ol>
