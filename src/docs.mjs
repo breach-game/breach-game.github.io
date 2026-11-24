@@ -26,7 +26,7 @@ export const DOCS = {
 <p>The whole screen is the pentester’s workstation, LR-OS. There is no game menu: everything lives in windows, and only one window is active at a time.</p>
 <ul>
   <li><b>Terminal</b>: where you type commands. The prompt is <code>kestrel@lignerouge</code>.</li>
-  <li><b>Browser</b>: shows NovaMind’s web pages, drawn by the game itself. <i>View source</i> shows the HTML, comments included.</li>
+  <li><b>Browser</b>: shows the target’s web pages, drawn by the game itself. <i>View source</i> shows the HTML, comments included.</li>
   <li><b>Messages</b>: Ada’s briefing, her advice, and the mission objectives.</li>
   <li><b>Notebook</b>: what you note with <code>notes add</code>.</li>
   <li><b>Network map</b>: the desktop wallpaper. Hosts appear as you discover them, and turn red once compromised.</li>
@@ -46,7 +46,7 @@ export const DOCS = {
       title: 'Commands',
       commands: true,
       body: `
-<p>The commands imitate the real tools, their options and their output, which stays in English as in real life. None of them sends anything on a real network: they all read the fictional NovaMind world. Type <code>help</code> in the game for the list, and <code>explain &lt;tool&gt;</code> to learn what a tool does and how defenders spot it.</p>`,
+<p>The commands imitate the real tools, their options and their output, which stays in English as in real life. None of them sends anything on a real network: they all read the fictional world of the mission. Type <code>help</code> in the game for the list, and <code>explain &lt;tool&gt;</code> to learn what a tool does and how defenders spot it.</p>`,
     },
     {
       id: 'missions',
@@ -61,6 +61,26 @@ export const DOCS = {
   <li><b>The debrief.</b> The screen switches to the Blue Team. You see your actions in the target’s log, where you were spotted, and what should have been done. A mission is only finished after its debrief.</li>
 </ol>
 <div class="note amber"><b>Out of scope.</b> Aim at anything outside the mandate, a real address for instance, and the game refuses before anything leaves. Ada then reminds you that, in real life, attacking a system without written authorisation is a crime (article 323-1 of the French Penal Code).</div>`,
+    },
+    {
+      id: 'seasons',
+      title: 'Seasons',
+      body: `
+<p>The NovaMind campaign is season 1. Eight more seasons follow, each in its own fictional company and with its own save, opened from the <i>Seasons</i> button of the title screen. They are all open from the start; the title screen suggests the next one.</p>
+<table class="cmds">
+  <thead><tr><th>Season</th><th>Where</th><th>What you learn</th></tr></thead>
+  <tbody>
+    <tr><td>2</td><td>Halcyon, a build chain</td><td>Dependency confusion, then its defence.</td></tr>
+    <tr><td>3</td><td>Pélican, an online shop</td><td>The classic flaws of the web: injection, markup in a review, access to a neighbour’s account, business logic.</td></tr>
+    <tr><td>4</td><td>Town of Corbelle</td><td>A ransomware crisis, on the defence side only: contain, decide, restore, detect.</td></tr>
+    <tr><td>5</td><td>Sélène, teams of AI agents</td><td>Shared index, poisoned memory, invented package, one agent posing as another, and a guardrail you write.</td></tr>
+    <tr><td>6</td><td>Alto, on a fictional cloud</td><td>Public storage, a token in a build log, a role that is too wide, an application granted by an employee.</td></tr>
+    <tr><td>7</td><td>Festival Lumière Noire</td><td>A bug bounty: its rules as a mandate, a logic flaw, a disclosure report, phishing seen by the defence.</td></tr>
+    <tr><td>8</td><td>Verdure, a vertical farm</td><td>Connected devices: an open message broker, a factory key shared by every sensor, a night on the defence side.</td></tr>
+    <tr><td>9</td><td>Ligne Rouge itself</td><td>The finale. No new command: you defend your own firm with what the seasons taught.</td></tr>
+  </tbody>
+</table>
+<p>Some seasons ask for more than flags: a file to repair and have checked with <code>verify</code>, a faulty line to point at with <code>review</code>, a detection rule or an agent guardrail to write and try with <code>rule test</code> and <code>eval run</code>, or a decision where no option is wrong but each has a price.</p>`,
     },
     {
       id: 'levels',
@@ -183,7 +203,7 @@ pnpm --silent --filter @breach/pack-cli run cli check "$PWD/../packs/packs" --co
 <p>L’écran entier est le poste du pentesteur, LR-OS. Pas de menu de jeu : tout vit dans des fenêtres, et une seule est active à la fois.</p>
 <ul>
   <li><b>Terminal</b> : là où l’on tape les commandes. Le prompt est <code>kestrel@lignerouge</code>.</li>
-  <li><b>Navigateur</b> : affiche les pages web de NovaMind, dessinées par le jeu. <i>Voir la source</i> montre le HTML, commentaires compris.</li>
+  <li><b>Navigateur</b> : affiche les pages web de la cible, dessinées par le jeu. <i>Voir la source</i> montre le HTML, commentaires compris.</li>
   <li><b>Messagerie</b> : le briefing d’Ada, ses conseils, et les objectifs de la mission.</li>
   <li><b>Carnet</b> : ce que vous notez avec <code>notes add</code>.</li>
   <li><b>Carte du réseau</b> : le fond d’écran du bureau. Les hôtes apparaissent quand vous les découvrez, et passent au rouge une fois compromis.</li>
@@ -203,7 +223,7 @@ pnpm --silent --filter @breach/pack-cli run cli check "$PWD/../packs/packs" --co
       title: 'Les commandes',
       commands: true,
       body: `
-<p>Les commandes imitent les vrais outils, leurs options et leur sortie, qui reste en anglais comme dans la réalité. Aucune n’envoie quoi que ce soit sur un vrai réseau : toutes lisent le monde fictif de NovaMind. Tapez <code>help</code> dans le jeu pour la liste, et <code>explain &lt;outil&gt;</code> pour savoir ce que fait un outil et comment la défense le repère.</p>`,
+<p>Les commandes imitent les vrais outils, leurs options et leur sortie, qui reste en anglais comme dans la réalité. Aucune n’envoie quoi que ce soit sur un vrai réseau : toutes lisent le monde fictif de la mission. Tapez <code>help</code> dans le jeu pour la liste, et <code>explain &lt;outil&gt;</code> pour savoir ce que fait un outil et comment la défense le repère.</p>`,
     },
     {
       id: 'missions',
@@ -218,6 +238,26 @@ pnpm --silent --filter @breach/pack-cli run cli check "$PWD/../packs/packs" --co
   <li><b>Le débrief.</b> L’écran passe en Blue Team. Vous voyez vos actions dans le journal de la cible, où vous avez été repéré, et ce qu’il aurait fallu faire. Une mission n’est terminée qu’après son débrief.</li>
 </ol>
 <div class="note amber"><b>Hors périmètre.</b> Visez quoi que ce soit hors du mandat, une vraie adresse par exemple, et le jeu refuse avant que rien ne parte. Ada rappelle alors que, dans la vraie vie, attaquer un système sans autorisation écrite est un délit (article 323-1 du Code pénal).</div>`,
+    },
+    {
+      id: 'seasons',
+      title: 'Les saisons',
+      body: `
+<p>La campagne NovaMind est la saison 1. Huit autres saisons suivent, chacune dans sa propre entreprise fictive et avec sa propre sauvegarde, depuis le bouton <i>Saisons</i> de l’écran titre. Elles sont toutes ouvertes dès le départ ; l’écran titre propose la suivante.</p>
+<table class="cmds">
+  <thead><tr><th>Saison</th><th>Où</th><th>Ce qu’on y apprend</th></tr></thead>
+  <tbody>
+    <tr><td>2</td><td>Halcyon, une chaîne de fabrication</td><td>La confusion de dépendances, puis sa parade.</td></tr>
+    <tr><td>3</td><td>Pélican, une boutique en ligne</td><td>Les failles classiques du web : injection, balisage dans un avis, accès au compte du voisin, logique métier.</td></tr>
+    <tr><td>4</td><td>Ville de Corbelle</td><td>Une crise de rançongiciel, uniquement côté défense : contenir, décider, restaurer, détecter.</td></tr>
+    <tr><td>5</td><td>Sélène, des équipes d’agents IA</td><td>Index partagé, mémoire empoisonnée, paquet inventé, agent qui se fait passer pour un autre, et un garde-fou à écrire.</td></tr>
+    <tr><td>6</td><td>Alto, sur un cloud fictif</td><td>Stockage public, jeton dans un journal de build, rôle trop large, application autorisée par un employé.</td></tr>
+    <tr><td>7</td><td>Festival Lumière Noire</td><td>Un bug bounty : son règlement comme mandat, une faille de logique, un rapport de divulgation, l’hameçonnage vu par la défense.</td></tr>
+    <tr><td>8</td><td>Verdure, une ferme verticale</td><td>Les objets connectés : un courtier de messages ouvert, une clé d’usine commune à tous les capteurs, une nuit côté défense.</td></tr>
+    <tr><td>9</td><td>Ligne Rouge elle-même</td><td>La finale. Aucune commande nouvelle : vous défendez votre propre cabinet avec ce que les saisons vous ont appris.</td></tr>
+  </tbody>
+</table>
+<p>Certaines saisons demandent plus que des flags : un fichier à réparer et à faire contrôler avec <code>verify</code>, une ligne fautive à désigner avec <code>review</code>, une règle de détection ou un garde-fou d’agent à écrire puis à essayer avec <code>rule test</code> et <code>eval run</code>, ou une décision où aucune option n’est fausse mais où chacune a un prix.</p>`,
     },
     {
       id: 'levels',
