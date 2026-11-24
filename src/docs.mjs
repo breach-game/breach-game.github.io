@@ -66,7 +66,7 @@ export const DOCS = {
       id: 'seasons',
       title: 'Seasons',
       body: `
-<p>The NovaMind campaign is season 1. Eight more seasons follow, each in its own fictional company and with its own save, opened from the <i>Seasons</i> button of the title screen. They are all open from the start; the title screen suggests the next one.</p>
+<p>The NovaMind campaign is season 1. Ten more seasons follow, each in its own fictional place and with its own save, opened from the <i>Seasons</i> button of the title screen. They are all open from the start; the title screen suggests the next one.</p>
 <table class="cmds">
   <thead><tr><th>Season</th><th>Where</th><th>What you learn</th></tr></thead>
   <tbody>
@@ -78,6 +78,8 @@ export const DOCS = {
     <tr><td>7</td><td>Festival Lumière Noire</td><td>A bug bounty: its rules as a mandate, a logic flaw, a disclosure report, phishing seen by the defence.</td></tr>
     <tr><td>8</td><td>Verdure, a vertical farm</td><td>Connected devices: an open message broker, a factory key shared by every sensor, a night on the defence side.</td></tr>
     <tr><td>9</td><td>Ligne Rouge itself</td><td>The finale. No new command: you defend your own firm with what the seasons taught.</td></tr>
+    <tr><td>10</td><td>The Lemerle family home</td><td>Defence only, with the family’s agreement: the home network, the router, a camera account, a Zigbee and Z-Wave hub, scams by text and voice, the mailbox, a plug that talks at night. Each debrief has a <i>To do at home</i> card.</td></tr>
+    <tr><td>11</td><td>Comptoir, a bank that is an API</td><td>The OWASP API Security Top 10: an old version still served, an object served without checking its owner, a code with no limit on tries, a server that fetches for you, a loose OAuth return address, a flood of valid requests.</td></tr>
   </tbody>
 </table>
 <p>Some seasons ask for more than flags: a file to repair and have checked with <code>verify</code>, a faulty line to point at with <code>review</code>, a detection rule or an agent guardrail to write and try with <code>rule test</code> and <code>eval run</code>, or a decision where no option is wrong but each has a price.</p>`,
@@ -120,7 +122,7 @@ export const DOCS = {
   <li>Every community pack passed the same validator as the official missions: reserved domains only, no code, a solution that finishes the mission in every language it declares.</li>
   <li>Each community mission is saved separately, so it never touches your campaign.</li>
 </ul>
-<p>The store also holds the BREACH team’s own extra content: thirty-two case files written from real incidents (the most sensitive ones played on the defence side only), nine fictional side series, six Expert-only challenges, a <i>First steps</i> collection, and four paths that suggest an order through everything, official missions included. A path step counts as soon as you finish it in any save.</p>`,
+<p>The store also holds the BREACH team’s own extra content: forty case files written from real incidents (the most sensitive ones played on the defence side only), twelve fictional side series, nine Expert-only challenges, a <i>First steps</i> collection, and five paths that suggest an order through everything, official missions included. A path step counts as soon as you finish it in any save.</p>`,
     },
     {
       id: 'create',
@@ -244,7 +246,7 @@ pnpm --silent --filter @breach/pack-cli run cli check "$PWD/../packs/packs" --co
       id: 'seasons',
       title: 'Les saisons',
       body: `
-<p>La campagne NovaMind est la saison 1. Huit autres saisons suivent, chacune dans sa propre entreprise fictive et avec sa propre sauvegarde, depuis le bouton <i>Saisons</i> de l’écran titre. Elles sont toutes ouvertes dès le départ ; l’écran titre propose la suivante.</p>
+<p>La campagne NovaMind est la saison 1. Dix autres saisons suivent, chacune dans son propre lieu fictif et avec sa propre sauvegarde, depuis le bouton <i>Saisons</i> de l’écran titre. Elles sont toutes ouvertes dès le départ ; l’écran titre propose la suivante.</p>
 <table class="cmds">
   <thead><tr><th>Saison</th><th>Où</th><th>Ce qu’on y apprend</th></tr></thead>
   <tbody>
@@ -256,6 +258,8 @@ pnpm --silent --filter @breach/pack-cli run cli check "$PWD/../packs/packs" --co
     <tr><td>7</td><td>Festival Lumière Noire</td><td>Un bug bounty : son règlement comme mandat, une faille de logique, un rapport de divulgation, l’hameçonnage vu par la défense.</td></tr>
     <tr><td>8</td><td>Verdure, une ferme verticale</td><td>Les objets connectés : un courtier de messages ouvert, une clé d’usine commune à tous les capteurs, une nuit côté défense.</td></tr>
     <tr><td>9</td><td>Ligne Rouge elle-même</td><td>La finale. Aucune commande nouvelle : vous défendez votre propre cabinet avec ce que les saisons vous ont appris.</td></tr>
+    <tr><td>10</td><td>La maison de la famille Lemerle</td><td>Côté défense seulement, avec l’accord de la famille : le réseau de la maison, la box, le compte d’une caméra, un hub Zigbee et Z-Wave, les arnaques par SMS et par la voix, la messagerie, une prise qui parle la nuit. Chaque débrief porte une carte <i>À faire chez toi</i>.</td></tr>
+    <tr><td>11</td><td>Comptoir, une banque qui est une API</td><td>L’OWASP API Security Top 10 : une vieille version encore servie, un objet servi sans vérifier son propriétaire, un code sans limite d’essais, un serveur qui va chercher à votre place, une adresse de retour OAuth trop souple, un afflux de requêtes valides.</td></tr>
   </tbody>
 </table>
 <p>Certaines saisons demandent plus que des flags : un fichier à réparer et à faire contrôler avec <code>verify</code>, une ligne fautive à désigner avec <code>review</code>, une règle de détection ou un garde-fou d’agent à écrire puis à essayer avec <code>rule test</code> et <code>eval run</code>, ou une décision où aucune option n’est fausse mais où chacune a un prix.</p>`,
@@ -298,7 +302,7 @@ pnpm --silent --filter @breach/pack-cli run cli check "$PWD/../packs/packs" --co
   <li>Chaque pack communautaire est passé par le même validateur que les missions officielles : domaines réservés uniquement, aucun code, une solution qui termine la mission dans chaque langue déclarée.</li>
   <li>Chaque mission communautaire a sa propre sauvegarde : elle ne touche jamais votre campagne.</li>
 </ul>
-<p>Le store contient aussi le contenu supplémentaire de l’équipe BREACH : trente-deux Dossiers écrits à partir d’incidents réels (les plus sensibles joués côté défense seulement), neuf hors-série fictifs, six Défis en Expert seulement, une collection <i>Premiers pas</i>, et quatre parcours qui proposent un ordre à travers tout le contenu, missions officielles comprises. Une étape de parcours compte dès que vous la terminez, dans n’importe quelle sauvegarde.</p>`,
+<p>Le store contient aussi le contenu supplémentaire de l’équipe BREACH : quarante Dossiers écrits à partir d’incidents réels (les plus sensibles joués côté défense seulement), douze hors-série fictifs, neuf Défis en Expert seulement, une collection <i>Premiers pas</i>, et cinq parcours qui proposent un ordre à travers tout le contenu, missions officielles comprises. Une étape de parcours compte dès que vous la terminez, dans n’importe quelle sauvegarde.</p>`,
     },
     {
       id: 'create',
