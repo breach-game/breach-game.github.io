@@ -247,7 +247,7 @@
       </li>
     </ol>
     <h3 class="more-title reveal">Beyond the campaign</h3>
-    <p class="intro reveal">Eight more seasons, each in a new company and ending with a finale at Ligne Rouge itself, short trainings, and the case files: series written from publicly documented incidents. Each is played under mandate at a fictional company, and ends with a sourced card of what really happened.</p>
+    <p class="intro reveal">Eight more seasons, each in a new company and ending with a finale at Ligne Rouge itself, twelve short trainings, nine side series, Expert challenges, and thirty-two case files: series written from publicly documented incidents, the most sensitive ones played on the defence side only. Each is played under mandate at a fictional company, and ends with a sourced card of what really happened.</p>
     <ol class="campaign more">
       <li class="mission web reveal d0">
         <span class="num">S2</span>
@@ -291,7 +291,7 @@
       </li>
       <li class="mission def reveal d8">
         <span class="num">T</span>
-        <div><h3>Trainings</h3><p>Four short missions, one technique each, always open: reading a log, encoding is not encryption, an altered install script, a suspicious email.</p><p class="ref">Ten minutes each</p></div>
+        <div><h3>Trainings</h3><p>Twelve short missions, one technique each, always open: reading a log, Base64, an altered install script, a suspicious email, jq, reading a token, code review, a detection rule, an agent guardrail, mqtt, crontab, and DNS mail records.</p><p class="ref">Ten minutes each</p></div>
         <span class="chip cyan">Training</span>
       </li>
       <li class="mission web reveal d8">
@@ -353,6 +353,121 @@
         <span class="num">D12</span>
         <div><h3>Case file: the planted sentence</h3><p>An assistant that learns from every visitor repeats to all the others what one of them taught it.</p><p class="ref">Inspired by Tay, 2016</p></div>
         <span class="chip violet">◆ Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D13</span>
+        <div><h3>Case file: the diagnostic file</h3><p>A browser diagnostic file sent to support carries a live session, replayed from elsewhere.</p><p class="ref">Inspired by Okta, 2023</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission ai reveal d8">
+        <span class="num">D14</span>
+        <div><h3>Case file: the freeze</h3><p>A coding agent told to freeze production deletes a database. Stop it with the cheapest move.</p><p class="ref">Inspired by a Replit agent, 2025</p></div>
+        <span class="chip violet">◆ Case file</span>
+      </li>
+      <li class="mission ai reveal d8">
+        <span class="num">D15</span>
+        <div><h3>Case file: the assistant’s answer</h3><p>A chat assistant makes up a refund rule with confidence, and the company answers for it.</p><p class="ref">Inspired by Air Canada, 2024</p></div>
+        <span class="chip violet">◆ Case file</span>
+      </li>
+      <li class="mission web reveal d8">
+        <span class="num">D16</span>
+        <div><h3>Case file: somebody else’s script</h3><p>A third-party script changes owner, then serves a different file to phones.</p><p class="ref">Inspired by Polyfill, 2024</p></div>
+        <span class="chip red">Case file</span>
+      </li>
+      <li class="mission ai reveal d8">
+        <span class="num">D17</span>
+        <div><h3>Case file: what gets pasted</h3><p>Pasting code into a public assistant is sending it. An egress filter that reads labels.</p><p class="ref">Inspired by Samsung, 2023</p></div>
+        <span class="chip violet">◆ Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D18</span>
+        <div><h3>Case file: the key at home</h3><p>An encrypted backup leaves more in clear than expected, and a key lives on a home computer.</p><p class="ref">Inspired by LastPass, 2022</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission web reveal d8">
+        <span class="num">D19</span>
+        <div><h3>Case file: the tag that moved</h3><p>A CI action’s tag now points elsewhere, and secrets land, encoded twice, in public logs.</p><p class="ref">Inspired by tj-actions, 2025</p></div>
+        <span class="chip red">Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D20</span>
+        <div><h3>Case file: the forgotten patch</h3><p>A component nobody listed, and an inspection device blinded by an expired certificate.</p><p class="ref">Inspired by Equifax, 2017</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D21</span>
+        <div><h3>Case file: twelve hundred cousins</h3><p>Reused passwords tried by the thousand, and a sharing feature that multiplies the leak.</p><p class="ref">Inspired by 23andMe, 2023</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D22</span>
+        <div><h3>Case file: the living-room password</h3><p>A contractor’s password stolen at home opens a data warehouse without a second factor.</p><p class="ref">Inspired by Snowflake customers, 2024</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D23</span>
+        <div><h3>Case file: the director’s face</h3><p>A video call with a familiar face asks for a transfer. Call back a known number.</p><p class="ref">Inspired by Arup, 2024</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D24</span>
+        <div><h3>Case file: the Friday of the counters</h3><p>No attacker: one faulty content file stops every counter. Recover in the right order.</p><p class="ref">Inspired by CrowdStrike, 2024</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D25</span>
+        <div><h3>Case file: the remote lookup</h3><p>Defence only: a library hidden in a vendor archive, and a patch that is not enough.</p><p class="ref">Inspired by Log4Shell, 2021</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D26</span>
+        <div><h3>Case file: the heartbeat</h3><p>Defence only: count the exposed services, patch, then reissue every key.</p><p class="ref">Inspired by Heartbleed, 2014</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D27</span>
+        <div><h3>Case file: the extra page</h3><p>Defence only: a page and an account an intruder left on a file-transfer server.</p><p class="ref">Inspired by MOVEit, 2023</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D28</span>
+        <div><h3>Case file: the consumer key</h3><p>Defence only: mail tokens signed with a key that should never have been accepted.</p><p class="ref">Inspired by Storm-0558, 2023</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D29</span>
+        <div><h3>Case file: the signed update</h3><p>Defence only: a vendor update, validly signed, that calls home.</p><p class="ref">Inspired by SolarWinds, 2020</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D30</span>
+        <div><h3>Case file: the swarm of cameras</h3><p>Defence only: cameras on factory passwords join a swarm that floods a DNS provider.</p><p class="ref">Inspired by Mirai, 2016</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D31</span>
+        <div><h3>Case file: the dosing setpoint</h3><p>Defence only: a remote session on a shared account moves a water-treatment setpoint.</p><p class="ref">Inspired by Oldsmar, 2021</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">D32</span>
+        <div><h3>Case file: the last controller</h3><p>Defence only: one admin account opens every server, and one offline controller saves the rebuild.</p><p class="ref">Inspired by NotPetya at Maersk, 2017</p></div>
+        <span class="chip cyan">Case file</span>
+      </li>
+      <li class="mission web reveal d8">
+        <span class="num">H</span>
+        <div><h3>Side series</h3><p>Nine fictional series on what the seasons did not cover: a look-alike domain, a Friday patch, password storage, a workstation’s processes, an outage with no attacker, Kubernetes, a mobile app, shadow AI, and a company directory.</p><p class="ref">Fictional companies · marketplace</p></div>
+        <span class="chip red">Side series</span>
+      </li>
+      <li class="mission def reveal d8">
+        <span class="num">X</span>
+        <div><h3>Challenges</h3><p>Six short puzzles played in Expert only: no guide, no hint, just the briefing.</p><p class="ref">Expert only</p></div>
+        <span class="chip cyan">Challenge</span>
+      </li>
+      <li class="mission law reveal d8">
+        <span class="num">P</span>
+        <div><h3>Paths</h3><p>Suggested orders across everything: first steps for someone who has never opened a terminal, web flaws, attacking and defending an AI, SOC analyst.</p><p class="ref">In the store</p></div>
+        <span class="chip ">Path</span>
       </li>
     </ol>
   </div>

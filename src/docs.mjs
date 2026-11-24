@@ -119,7 +119,8 @@ export const DOCS = {
   <li>The catalogue is signed (ECDSA P-256). The game checks the signature with a key built into it, then checks every pack against its SHA-256 before reading it.</li>
   <li>Every community pack passed the same validator as the official missions: reserved domains only, no code, a solution that finishes the mission in every language it declares.</li>
   <li>Each community mission is saved separately, so it never touches your campaign.</li>
-</ul>`,
+</ul>
+<p>The store also holds the BREACH team’s own extra content: thirty-two case files written from real incidents (the most sensitive ones played on the defence side only), nine fictional side series, six Expert-only challenges, a <i>First steps</i> collection, and four paths that suggest an order through everything, official missions included. A path step counts as soon as you finish it in any save.</p>`,
     },
     {
       id: 'create',
@@ -296,7 +297,8 @@ pnpm --silent --filter @breach/pack-cli run cli check "$PWD/../packs/packs" --co
   <li>Le catalogue est signé (ECDSA P-256). Le jeu vérifie la signature avec une clé intégrée, puis l’empreinte SHA-256 de chaque pack avant de le lire.</li>
   <li>Chaque pack communautaire est passé par le même validateur que les missions officielles : domaines réservés uniquement, aucun code, une solution qui termine la mission dans chaque langue déclarée.</li>
   <li>Chaque mission communautaire a sa propre sauvegarde : elle ne touche jamais votre campagne.</li>
-</ul>`,
+</ul>
+<p>Le store contient aussi le contenu supplémentaire de l’équipe BREACH : trente-deux Dossiers écrits à partir d’incidents réels (les plus sensibles joués côté défense seulement), neuf hors-série fictifs, six Défis en Expert seulement, une collection <i>Premiers pas</i>, et quatre parcours qui proposent un ordre à travers tout le contenu, missions officielles comprises. Une étape de parcours compte dès que vous la terminez, dans n’importe quelle sauvegarde.</p>`,
     },
     {
       id: 'create',
