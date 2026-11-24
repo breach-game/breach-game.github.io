@@ -129,6 +129,7 @@
     <tr><td>9</td><td>Ligne Rouge elle-même</td><td>La finale. Aucune commande nouvelle : vous défendez votre propre cabinet avec ce que les saisons vous ont appris.</td></tr>
     <tr><td>10</td><td>La maison de la famille Lemerle</td><td>Côté défense seulement, avec l’accord de la famille : le réseau de la maison, la box, le compte d’une caméra, un hub Zigbee et Z-Wave, les arnaques par SMS et par la voix, la messagerie, une prise qui parle la nuit. Chaque débrief porte une carte <i>À faire chez toi</i>.</td></tr>
     <tr><td>11</td><td>Comptoir, une banque qui est une API</td><td>L’OWASP API Security Top 10 : une vieille version encore servie, un objet servi sans vérifier son propriétaire, un code sans limite d’essais, un serveur qui va chercher à votre place, une adresse de retour OAuth trop souple, un afflux de requêtes valides.</td></tr>
+    <tr><td>12</td><td>Coup de main, une appli écrite avec un assistant IA</td><td>Une clé publique de la base sans règles par ligne, un compte de démo administrateur, un secret dans une conversation partagée, la relecture du code généré, l’écriture des règles.</td></tr>
   </tbody>
 </table>
 <p>Certaines saisons demandent plus que des flags : un fichier à réparer et à faire contrôler avec <code>verify</code>, une ligne fautive à désigner avec <code>review</code>, une règle de détection ou un garde-fou d’agent à écrire puis à essayer avec <code>rule test</code> et <code>eval run</code>, ou une décision où aucune option n’est fausse mais où chacune a un prix.</p></section>
@@ -159,7 +160,7 @@
   <li>Chaque pack communautaire est passé par le même validateur que les missions officielles : domaines réservés uniquement, aucun code, une solution qui termine la mission dans chaque langue déclarée.</li>
   <li>Chaque mission communautaire a sa propre sauvegarde : elle ne touche jamais votre campagne.</li>
 </ul>
-<p>Le store contient aussi le contenu supplémentaire de l’équipe BREACH : quarante Dossiers écrits à partir d’incidents réels (les plus sensibles joués côté défense seulement), douze hors-série fictifs, neuf Défis en Expert seulement, une collection <i>Premiers pas</i>, et cinq parcours qui proposent un ordre à travers tout le contenu, missions officielles comprises. Une étape de parcours compte dès que vous la terminez, dans n’importe quelle sauvegarde.</p></section>
+<p>Le store contient aussi le contenu supplémentaire de l’équipe BREACH : quarante-six Dossiers écrits à partir d’incidents réels (les plus sensibles joués côté défense seulement), quinze hors-série fictifs, onze Défis en Expert seulement, une collection <i>Premiers pas</i>, et six parcours qui proposent un ordre à travers tout le contenu, missions officielles comprises. Une étape de parcours compte dès que vous la terminez, dans n’importe quelle sauvegarde.</p></section>
     <section id="create" aria-labelledby="create-h"><h2 id="create-h">Écrire votre mission</h2>
 <p>Un pack est un dossier de fichiers YAML. Un pack <b>monde</b> décrit un réseau fictif : hôtes, fichiers, pages web, DNS, personnages. Un pack <b>mission</b> se joue dans un monde, le vôtre ou celui de NovaMind : objectifs, flags, règles, indices, guidage et débrief.</p>
 <pre class="code glass"><span class="c"># un dossier par pack</span>
